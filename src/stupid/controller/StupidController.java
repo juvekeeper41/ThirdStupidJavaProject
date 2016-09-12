@@ -30,7 +30,6 @@ private void askQuestions()
 		System.out.println("My next question is this: What is the best type of food?");
 		String foodInput = inputReader.nextLine();
 		System.out.println("OK, you typed this, right?: " + foodInput);
-	    inputReader.nextLine(); 
 		
 		System.out.println("How much do you weigh?");
 		int input1 = inputReader.nextInt();	
@@ -49,12 +48,13 @@ private void askQuestions()
 		
 		System.out.println("What is the answer to 2+2?");
 		int someInput = inputReader.nextInt();
-		System.out.println("OK, you typed this: " + someInput + ". The correct answer is 4. Type anything to continue the questions.");
-		inputReader.nextLine(); 		
+		System.out.println("OK, you typed this: " + someInput + ". The correct answer is 4."); 		
 		String other = inputReader.next();
 		System.out.println(other);
+		inputReader.nextLine();
 		
 		System.out.println("Do my questions bother you?");
+		String botherInput = inputReader.nextLine();
 		System.out.println("I'm sorry, if so. I was programmed to ask them.");
 		
 	}
